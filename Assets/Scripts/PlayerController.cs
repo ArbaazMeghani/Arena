@@ -4,7 +4,8 @@ using UnityEngine.Networking;
 public class PlayerController : NetworkBehaviour
 {
 	public override void OnStartLocalPlayer() {
-		GetComponent().material.color = Color.blue;
+		gameObject.GetComponentInChildren<MeshRenderer> ().material.color = Color.blue;
+		gameObject.transform.SetPositionAndRotation (new Vector3 (0, 1, 0), gameObject.transform.rotation);
 	}
 
 	void Update() {
