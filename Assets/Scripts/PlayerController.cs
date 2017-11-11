@@ -17,7 +17,7 @@ public class PlayerController : NetworkBehaviour
 			return;
 
 		if(Input.GetButton("Fire1"))
-			Fire();
+			CmdFire();
 		float horizontalMovement = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
 		float verticalMovement = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
 
@@ -25,13 +25,16 @@ public class PlayerController : NetworkBehaviour
 		transform.Translate(0, 0, verticalMovement);
 	}
 
-	void Fire() {
+	[Command]
+	void CmdFire() {
 		GameObject bullet = Instantiate (
 			bulletPrefab,
 			bulletSpawn.position,
 			bulletSpawn.rotation);
 
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
+
+		NetworkServer.Spawn (bullet);
 		Destroy(bullet, 2.0f);
 	}
 }

@@ -277,8 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac8aa7658df6264abfdf73e68a022ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  bulletSpawn: {fileID: 0}
+  bulletPrefab: {fileID: 1973723278202606, guid: 4f2a1fac1f08f884c925f44064ca9dd6,
+    type: 2}
+  bulletSpawn: {fileID: 4471820864996878}
 --- !u!136 &136598214656485324
 CapsuleCollider:
   m_ObjectHideFlags: 1
