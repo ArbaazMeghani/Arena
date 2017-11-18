@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other) {
 		Debug.Log ("Collision Test");
-		Health playerHealth = other.gameObject.GetComponent<Health> ();
+		Health playerHealth = other.gameObject.GetComponentInParent<Health> ();
 		if (playerHealth == null)
 			Debug.Log ("Null");
 		if (playerHealth != null)
