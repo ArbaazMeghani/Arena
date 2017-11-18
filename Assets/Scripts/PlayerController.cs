@@ -16,7 +16,7 @@ public class PlayerController : NetworkBehaviour
 		fireTime = 0.0f;
 	}
 
-	void Update() {
+	void FixedUpdate() {
 		if (!isLocalPlayer)
 			return;
 

@@ -57,7 +57,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4556024862678416}
   - component: {fileID: 114870999581240338}
-  - component: {fileID: 114749509934306868}
   - component: {fileID: 114037028968507610}
   - component: {fileID: 114640136477470614}
   m_Layer: 0
@@ -266,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 224522499177006076}
+  destroyOnDeath: 1
 --- !u!114 &114685809056196454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,21 +287,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114749509934306868
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293495708762990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac8aa7658df6264abfdf73e68a022ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireRate: 0.2
-  bulletPrefab: {fileID: 1973723278202606, guid: 4f2a1fac1f08f884c925f44064ca9dd6,
-    type: 2}
-  bulletSpawn: {fileID: 0}
 --- !u!114 &114858884227627900
 MonoBehaviour:
   m_ObjectHideFlags: 1
