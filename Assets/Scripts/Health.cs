@@ -17,5 +17,6 @@ public class Health : MonoBehaviour {
 		}
 
 		healthBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
+		Debug.Log (currentHealth.ToString ());
 	}
 }
