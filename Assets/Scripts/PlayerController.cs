@@ -14,6 +14,7 @@ public class PlayerController : NetworkBehaviour
 		gameObject.GetComponentInChildren<MeshRenderer> ().material.color = Color.blue;
 		gameObject.transform.SetPositionAndRotation (new Vector3 (0, 1, 0), gameObject.transform.rotation);
 		fireTime = 0.0f;
+		gameObject.GetComponentInChildren<Camera> ().enabled = true;
 	}
 
 	void FixedUpdate() {
