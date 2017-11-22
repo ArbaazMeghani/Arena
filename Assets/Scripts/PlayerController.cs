@@ -15,6 +15,7 @@ public class PlayerController : NetworkBehaviour
 		gameObject.transform.SetPositionAndRotation (new Vector3 (0, 1, 0), gameObject.transform.rotation);
 		fireTime = 0.0f;
 		gameObject.GetComponentInChildren<Camera> ().enabled = true;
+		gameObject.GetComponentInChildren<AudioListener> ().enabled = true;
 	}
 
 	void FixedUpdate() {
